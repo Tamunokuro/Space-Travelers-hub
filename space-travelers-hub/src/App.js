@@ -1,28 +1,35 @@
-import logo from './logo.svg';
+import React from 'react';
+import {
+  BrowserRouter, Routes, Route, NavLink,
+} from 'react-router-dom';
+import logo from './planet.png';
 import './App.css';
+import Rockets from './pages/Rockets';
+import Missions from './pages/Missions';
+import MyProfile from './pages/MyProfile';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <img className="logo" src={logo} alt="logo" />
+      <h1>Space Travelers&apos; Hub</h1>
+      <BrowserRouter>
+        <NavLink to="/">
+          Rockets
+        </NavLink>
+        <NavLink to="/missions">
+          Missions
+        </NavLink>
+        <NavLink to="/myprofile">
+          My Profile
+        </NavLink>
+        <Routes>
+          <Route exact path="/" element={<Rockets />} />
+          <Route exact path="/missions" element={<Missions />} />
+          <Route exact path="/myprofile" element={<MyProfile />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
