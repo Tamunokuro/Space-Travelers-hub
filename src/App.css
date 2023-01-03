@@ -32,12 +32,12 @@
   margin-right: 2rem;
   text-decoration: none;
   line-height: 2px;
-  font-weight: 600;
 }
 
-.navlink:active, .navlink:focus, .navlink:hover {
+.navlink:active,
+.navlink:focus,
+.navlink:hover {
   text-decoration: underline;
-
 }
 
 .navlink:nth-child(2) {
