@@ -25,14 +25,20 @@
   font-weight: bolder;
 }
 
+.navbar-header:hover {
+  color: #494949;
+}
+
 .navlink {
   color: #449cff;
   font-weight: 500;
   font-size: 18px;
   margin-right: 2rem;
+  text-decoration: none;
 }
 
-.navlink:nth-child(2) {
-  border-right: 2px solid #dcdcdc;
-  padding: 5px;
+.navlink:active,
+.navlink:focus,
+.navlink:hover {
+  text-decoration: underline;
 }
