@@ -1,9 +1,10 @@
 import React from 'react';
+import RocketList from '../components/RocketList';
 
-const Rockets = () => (
+const Rocket = () => (
   <div>
-    Rockets
+    <RocketList />
   </div>
 );
 
-export default Rockets;
+export default Rocket;
