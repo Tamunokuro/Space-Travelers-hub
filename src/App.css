@@ -10,7 +10,7 @@
 .nav {
   border-bottom: 1px solid #dcdcdc;
   padding: 1.5rem;
-  margin: 0 1.5rem
+  margin: 0 1.5rem;
 }
 
 .nav .navbar {
@@ -30,7 +30,6 @@
   font-weight: 500;
   font-size: 18px;
   margin-right: 2rem;
-  font-weight: 900;
 }
 
 .navlink:nth-child(2) {
