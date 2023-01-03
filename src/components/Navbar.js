@@ -8,20 +8,20 @@ import '../App.css';
 const MyNavbar = () => (
   <Navbar className="nav">
     <Container className="navbar">
-      <Navbar.Brand>
+      <Navbar.Brand style={{ display: 'flex', gap: '10px' }}>
         <img
           src={logo}
           width="50"
           height="50"
           alt="Space travelers hub logo"
         />
-        <Link to="/" className="navbar-header">Space Travels Hub</Link>
+        <Link to="/" className="navbar-header">Space Travels&apos; Hub</Link>
       </Navbar.Brand>
-      <Nav.Link>
+      <Nav>
         <Link to="/" className="navlink">Rockets</Link>
         <Link to="/missions" className="navlink">Missions</Link>
         <Link to="/myprofile" className="navlink">My Profile</Link>
-      </Nav.Link>
+      </Nav>
     </Container>
   </Navbar>
 

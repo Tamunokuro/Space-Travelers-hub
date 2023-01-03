@@ -7,10 +7,15 @@
   font-family: 'Lato', sans-serif;
 }
 
+.nav {
+  border-bottom: 1px solid #dcdcdc;
+  padding: 1.5rem;
+  margin: 0 1.5rem
+}
+
 .nav .navbar {
   display: flex;
   justify-content: space-between;
-  margin: 0.5rem 1rem;
 }
 
 .navbar-header {
@@ -21,10 +26,11 @@
 }
 
 .navlink {
-  color: #6a5acd;
+  color: #449cff;
   font-weight: 500;
   font-size: 18px;
   margin-right: 2rem;
+  font-weight: 900;
 }
 
 .navlink:nth-child(2) {
