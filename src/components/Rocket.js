@@ -28,7 +28,6 @@ const Rocket = ({ rocket, handleChange }) => (
         </div>
       </Col>
     </Row>
-
   </Container>
 );
 
