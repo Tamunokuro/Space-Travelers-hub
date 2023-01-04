@@ -18,9 +18,9 @@ const MyNavbar = () => (
         <Link to="/" className="navbar-header">Space Travels&apos; Hub</Link>
       </Navbar.Brand>
       <Nav>
-        <Link to="/" className="navlink">Rockets</Link>
-        <Link to="/missions" className="navlink">Missions</Link>
-        <Link to="/myprofile" className="navlink">My Profile</Link>
+        <Nav.Link><Link to="/" className="navlink">Rockets</Link></Nav.Link>
+        <Nav.Link><Link to="/missions" className="navlink" style={{ borderRight: '3px solid #dcdcdc', paddingRight: '5px' }}>Missions</Link></Nav.Link>
+        <Nav.Link><Link to="/myprofile" className="navlink">My Profile</Link></Nav.Link>
       </Nav>
     </Container>
   </Navbar>
