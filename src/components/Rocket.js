@@ -1,29 +1,34 @@
 import PropTypes from 'prop-types';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
 const Rocket = ({ rocket, handleChange }) => (
-  <>
-    <div>
-      <img
-        src={rocket.flickr_images}
-        alt="rocket"
-      />
-      <div>
-        <h1>{rocket.rocket_name}</h1>
-        <p>
-          <span>
-            {rocket.reserved ? 'Reserved' : ''}
-          </span>
-          {rocket.description}
-        </p>
-        <button
-          onClick={() => handleChange(rocket.id)}
-          type="button"
-        >
-          {rocket.reserved ? 'cancel reservation' : 'Reserve Rocket'}
-        </button>
-      </div>
-    </div>
-  </>
+  <Container fluid="md" className="pt-3">
+    <Row>
+      <Col sm={5}>
+        <img
+          src={rocket.flickr_images}
+          alt="Rocket"
+          height={300}
+          width={400}
+          className="rounded"
+        />
+      </Col>
+      <Col sm={7}>
+        <div>
+          <h2>{rocket.rocket_name}</h2>
+          <p>
+            {rocket.description}
+          </p>
+          <Button variant="primary" onClick={() => handleChange(rocket.id)}>
+            {rocket.reserved ? 'Cancel Reserve' : 'Reserve Rocket'}
+          </Button>
+        </div>
+      </Col>
+    </Row>
+  </Container>
 );
 
 Rocket.propTypes = {
