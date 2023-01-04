@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
-const Rocket = ({ rocket }) => (
+const Rocket = ({ rocket, handleChange }) => (
   <Container fluid="md" className="pt-3">
     <Row>
       <Col sm={5}>
@@ -22,7 +22,7 @@ const Rocket = ({ rocket }) => (
           <p>
             {rocket.description}
           </p>
-          <Button variant="primary">
+          <Button variant="primary" onClick={() => handleChange(rocket.id)}>
             {rocket.reserved ? 'Cancel Reserve' : 'Reserve Rocket'}
           </Button>
         </div>
@@ -40,6 +40,7 @@ Rocket.propTypes = {
     id: PropTypes.number,
     reserved: PropTypes.bool,
   }).isRequired,
+  handleChange: PropTypes.func.isRequired,
 };
 
 export default Rocket;
