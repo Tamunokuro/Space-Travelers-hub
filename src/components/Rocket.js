@@ -28,7 +28,6 @@ const Rocket = ({ rocket }) => (
         </div>
       </Col>
     </Row>
-
   </Container>
 );
 
@@ -40,6 +39,7 @@ Rocket.propTypes = {
     id: PropTypes.number,
     reserved: PropTypes.bool,
   }).isRequired,
+  handleChange: PropTypes.func.isRequired,
 };
 
 export default Rocket;
