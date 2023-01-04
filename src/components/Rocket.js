@@ -10,7 +10,7 @@ const Rocket = ({ rocket, handleChange }) => (
       <Col sm={5}>
         <img
           src={rocket.flickr_images}
-          alt=""
+          alt="Rocket"
           height={300}
           width={400}
           className="rounded"

@@ -6,7 +6,11 @@ import Rocket from './Rocket';
 const RocketList = () => {
   const { allRockets } = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
-  useEffect(() => { dispatch(fetchRockets()); }, [dispatch]);
+  useEffect(() => {
+    if (allRockets.length) { return; }
+    dispatch(fetchRockets());
+  },
+  [dispatch, allRockets]);
 
   const handleChange = (id) => {
     dispatch(reserveRocket(id));
