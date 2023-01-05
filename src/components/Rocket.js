@@ -20,6 +20,9 @@ const Rocket = ({ rocket, handleChange }) => (
         <div>
           <h2>{rocket.rocket_name}</h2>
           <p>
+            <span>
+              {rocket.reserved ? 'Reserved' : ''}
+            </span>
             {rocket.description}
           </p>
           <Button variant="primary" onClick={() => handleChange(rocket.id)}>
