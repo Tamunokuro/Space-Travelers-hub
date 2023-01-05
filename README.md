@@ -63,34 +63,18 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [Space Travelers' Hub] <a name="about-project"></a>
 
-> This is a simple react application that shows different ship missions and allows for users to book a rocket mission.
-
-**[your_project__name]** is a...
+> This is a simple react application that shows different ship missions and allows for users to book a rocket for mission.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://redux-toolkit.js.org/">React Tool Kit</a></li>
+    <li><a href="https://react-bootstrap.netlify.app/">React Bootstrap</a></li>
   </ul>
 </details>
 
@@ -98,11 +82,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Book Rockets**
+- **Join Mission**
+- **Cancel Reservation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,9 +92,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Space Travelers](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,34 +100,22 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
+- Nodejs
+- NPM
+- React
+- Redux Tool Kit
 
 In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- Run `npm install`
+- Run `npm start`
 
 ### Setup
 
 Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
+- Run `git clone git@github.com:Tamunokuro/Space-Travelers-hub.git`
 
 ### Install
 
@@ -208,15 +176,15 @@ Example:
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [Tamunokuro](https://github.com/Tamunokuro)
+- Twitter: [tamuno____](https://twitter.com/tamuno____)
+- LinkedIn: [Joshua Blue-Jack](https://linkedin.com/in/joshua-blue-jack)
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [jorgegoco](https://github.com/jorgegoco)
+- Twitter: [JorgeGo78017548](https://twitter.com/JorgeGo78017548)
+- LinkedIn: [Jorge González Conde](https://linkedin.com/in/jorgegoco/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -226,9 +194,8 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Chat Bot**
+- [ ] **User profile**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
