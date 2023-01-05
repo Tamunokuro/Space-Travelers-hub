@@ -43,9 +43,10 @@ const MissionsList = () => {
                   )}
               </td>
               <td className="w-auto">
-                {mission.mission_member ? (
-                  <Button variant="outline-secondary" onClick={() => dispatch(joinmission(mission.mission_id))}>Join Mission</Button>)
-                  : (<Button variant="outline-danger" onClick={() => dispatch(joinmission(mission.mission_id))}>Leave Mission</Button>)}
+                { mission.mission_member && (
+                  <Button variant="outline-secondary" onClick={() => dispatch(joinmission(mission.mission_id))}>Join Mission</Button>)}
+                {' '}
+                { !mission.mission_member && (<Button variant="outline-danger" onClick={() => dispatch(joinmission(mission.mission_id))}>Leave Mission</Button>)}
 
               </td>
             </tr>

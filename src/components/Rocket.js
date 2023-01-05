@@ -26,17 +26,18 @@ const Rocket = ({ rocket, handleChange }) => (
             </Badge>
             {rocket.description}
           </p>
-          {rocket.reserved
-            ? (
+          { rocket.reserved
+            && (
               <Button variant="outline-secondary" onClick={() => handleChange(rocket.id)}>
                 Cancel Reserve
               </Button>
-            )
-            : (
-              <Button variant="primary" onClick={() => handleChange(rocket.id)}>
-                Reserve Rocket
-              </Button>
             )}
+          { !rocket.reserved
+          && (
+            <Button variant="primary" onClick={() => handleChange(rocket.id)}>
+              Reserve Rocket
+            </Button>
+          )}
         </div>
       </Col>
     </Row>
