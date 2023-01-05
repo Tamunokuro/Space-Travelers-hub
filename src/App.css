@@ -25,6 +25,10 @@
   font-weight: bolder;
 }
 
+.navbar-header:hover {
+  color: #494949;
+}
+
 .navlink {
   color: #449cff;
   font-weight: 500;

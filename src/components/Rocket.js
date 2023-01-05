@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import Badge from 'react-bootstrap/Badge';
 
 const Rocket = ({ rocket, handleChange }) => (
   <Container fluid="md" className="pt-3">
@@ -20,14 +21,22 @@ const Rocket = ({ rocket, handleChange }) => (
         <div>
           <h2>{rocket.rocket_name}</h2>
           <p>
-            <span>
+            <Badge pill bg="info">
               {rocket.reserved ? 'Reserved' : ''}
-            </span>
+            </Badge>
             {rocket.description}
           </p>
-          <Button variant="primary" onClick={() => handleChange(rocket.id)}>
-            {rocket.reserved ? 'Cancel Reserve' : 'Reserve Rocket'}
-          </Button>
+          {rocket.reserved
+            ? (
+              <Button variant="outline-secondary" onClick={() => handleChange(rocket.id)}>
+                Cancel Reserve
+              </Button>
+            )
+            : (
+              <Button variant="primary" onClick={() => handleChange(rocket.id)}>
+                Reserve Rocket
+              </Button>
+            )}
         </div>
       </Col>
     </Row>
