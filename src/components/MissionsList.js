@@ -31,16 +31,16 @@ const MissionsList = () => {
               <td className="w-auto">{mission.mission_name}</td>
               <td className="w-auto">{mission.description}</td>
               <td>
-                {mission.mission_member ? (
+                {mission.mission_member && (
                   <Button variant="secondary" size="md" disabled>
                     Not a Member
                   </Button>
-                )
-                  : (
-                    <Button variant="primary" size="md" disabled>
-                      Active Member
-                    </Button>
-                  )}
+                )}
+                {!mission.mission_member && (
+                <Button variant="primary" size="md" disabled>
+                  Active Member
+                </Button>
+                )}
               </td>
               <td className="w-auto">
                 { mission.mission_member && (
