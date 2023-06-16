@@ -108,31 +108,6 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 - Run `git clone git@github.com:Tamunokuro/Space-Travelers-hub.git`
 
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
 ### Run tests
 
 To run tests, run the following command:
