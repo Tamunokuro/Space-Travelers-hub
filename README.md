@@ -38,7 +38,6 @@ After you're finished please remove all the comments and instructions!
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [Install](#install)
     - [Usage](#usage)
     - [Run tests](#run-tests)
     - [Deployment](#deployment)
